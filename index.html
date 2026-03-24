@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Hřiště</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+header {
+    background: #E20074;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.4em;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.block {
+    border: 1px solid #2a2a2a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: #1a1a1a;
+}
+
+h2 {
+    margin-top: 0;
+    color: #E20074;
+}
+
+button {
+    background: #E20074;
+    border: none;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.small {
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>AI vám nevezme práci.<br>Ale člověk, který ji používá, ano.</h1>
+    <p>Tohle není školení. Tohle je hřiště.</p>
+</header>
+
+<div class="section">
+
+<!-- BLOK 1 -->
+<h2>Sundání digitální masky</h2>
+
+<div class="block">
+    <h3>Analogová AI</h3>
+    <p>Vyzkoušíme si, jak AI funguje bez elektřiny.</p>
+    <button onclick="alert('Podstatné jméno + sloveso + přídavné jméno')">Zkusit</button>
+</div>
+
+<div class="block">
+    <h3>Lhář v přímém přenosu</h3>
+    <p>Vyzkoušíme si, jak AI dokáže sebevědomě kecat.</p>
+    <button onclick="copyText('Kdo vyhrál hokejové mistrovství světa v roce 1923 v Praze?')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+<div class="block">
+    <h3>AI jako chameleon</h3>
+    <p>Vyzkoušíme si, jak AI mění styl komunikace.</p>
+    <button onclick="copyText('Přepiš tento e-mail do přátelského tónu')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+<!-- BLOK 2 -->
+<h2>Drtič nudy</h2>
+
+<div class="block">
+    <h3>Rentgenové vidění</h3>
+    <p>Vyzkoušíme si, jak AI zkrátí dlouhý text.</p>
+    <button onclick="copyText('Shrň tento text do 3 vět')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+<div class="block">
+    <h3>Překladač kontextu</h3>
+    <p>Vyzkoušíme si odpověď zákazníkovi bez konfliktu.</p>
+    <button onclick="copyText('Odpověz zákazníkovi slušně a bez konfliktu')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+<div class="block">
+    <h3>Kreativní kuchař</h3>
+    <p>Vyzkoušíme si tvorbu nápadů z náhodných vstupů.</p>
+    <button onclick="copyText('Vymysli recept z těchto surovin')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+<div class="block">
+    <h3>Vysvětlovač</h3>
+    <p>Vyzkoušíme si vysvětlení složité věci jednoduše.</p>
+    <button onclick="copyText('Vysvětli mi inflaci jako dítěti')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+<!-- BLOK 3 -->
+<h2>Zkrocení stroje</h2>
+
+<div class="block">
+    <h3>Sandwich prompt</h3>
+    <p>Vyzkoušíme si, jak správně zadat úkol.</p>
+    <div class="small">ROLE + ÚKOL + STYL</div>
+    <button onclick="copyText('Jsi expert. Tvůj úkol je... Odpověz stručně.')">
+        Zkopírovat strukturu
+    </button>
+</div>
+
+<!-- BLOK 4 -->
+<h2>Zrození virálu</h2>
+
+<div class="block">
+    <h3>Brainstorming</h3>
+    <p>Vyzkoušíme si tvorbu příběhu.</p>
+    <button onclick="copyText('Vymysli krátký příběh s vtipnou pointou')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+<div class="block">
+    <h3>Generování</h3>
+    <p>Vyzkoušíme si převod nápadu na obraz a video.</p>
+    <button onclick="copyText('Vytvoř scénář pro krátké video')">
+        Zkopírovat prompt
+    </button>
+</div>
+
+</div>
+
+<script>
+function copyText(text) {
+    navigator.clipboard.writeText(text);
+    alert("Zkopírováno!");
+}
+</script>
+
+</body>
+</html>
