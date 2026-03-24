@@ -1,0 +1,2 @@
+# AI-skoleni
+ai skoleni
